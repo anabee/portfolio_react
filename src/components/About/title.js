@@ -6,8 +6,14 @@ const useStyles = makeStyles((theme) => ({
     image: {
       padding: theme.spacing(2),
       textAlign: 'center',
-      maxHeight: 200, 
+      maxHeight: 150, 
+      width:"100%", 
     },
+    portrait: {
+        padding: theme.spacing(2),
+        textAlign: 'center',
+        maxHeight: 200, 
+      },
   }));
 
 const Title = () => {
@@ -28,7 +34,7 @@ const Title = () => {
                     <h1>Ana Valdivia</h1>
                 </Grid>
                 <Grid item xs={12}>
-                    <img src="/../../Me-min.jpeg" alt="me" className={classes.image}/>
+                    <img src="/../../Me-min.jpeg" alt="me" className={classes.portrait}/>
                 </Grid>
             </Grid>
         </div>
