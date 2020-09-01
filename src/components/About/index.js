@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import Title from "./title";
 import AboutCard from "./card";
+import Projects from "../Projects/index";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,6 +36,10 @@ const Home = () => {
         <Container>
           <Title />
           <AboutCard/>
+        </Container>
+
+        <Container>
+          <Projects/>
         </Container>
     </div>
   )
