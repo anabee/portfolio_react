@@ -1,25 +1,37 @@
 import React from 'react';
+import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
-import ProjectCard from "./card";
+import ProjectCard from './projectcards';
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    
-  },
-}));
+    image: {
+      padding: theme.spacing(2),
+      textAlign: 'center',
+      maxHeight: 150, 
+      width:"100%", 
+    },
+  }));
 
-const Projects = () => {
-  const classes = useStyles();
-  const preventDefault = (event) => event.preventDefault();
+const ProjectSection = () => {
+    const classes = useStyles();
 
-  return (
-    <div>
-        <Container>
-          <ProjectCard/>
-        </Container>
-    </div>
-  )
+    return (
+        <div>
+            <Grid
+            container
+            direction="column"
+            justify="center"
+            alignItems="center"
+            >
+                <Grid item xs={12}>
+                    <img src="/../../border.png" alt="leaves" className={classes.image}/>
+                </Grid>
+                <Grid item xs={12}>
+                    <ProjectCard/>
+                </Grid>
+            </Grid>
+        </div>
+    )
 }
 
-export default Projects;
+export default ProjectSection;
