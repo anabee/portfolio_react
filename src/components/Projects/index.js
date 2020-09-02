@@ -26,6 +26,9 @@ const ProjectSection = () => {
                 <Grid item xs={12}>
                     <img src="/../../border.png" alt="leaves" className={classes.image}/>
                 </Grid>
+                <div>
+                    <h3>projects</h3>
+                </div>
                 <Grid item xs={12}>
                     <ProjectCard/>
                 </Grid>

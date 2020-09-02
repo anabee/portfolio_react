@@ -27,6 +27,19 @@ const ContactSection = () => {
                 <Grid item xs={12}>
                     <img src="/../../border.png" alt="leaves" className={classes.image}/>
                 </Grid>
+                <div>
+                  <h3>
+                    contact
+                  </h3>
+                </div>
+                <Grid item xs={12}>
+                  <ContactCard/>
+                </Grid>
+                <div>
+                  <h3>
+                    art
+                  </h3>
+                </div>
                 <Grid item xs={12}>
                   <ContactCard/>
                 </Grid>
