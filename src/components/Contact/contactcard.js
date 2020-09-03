@@ -8,9 +8,11 @@ const ContactCard = ()=> {
         <div>
             <Card>
                 <CardContent>
-                    <p>
-                        Email
-                    </p>
+                    <ul>
+                        <li>email: ana.valdivia112@gmail.com</li>
+                        <li>github</li>
+                        <li>linkedIn</li>
+                    </ul>
                 </CardContent>
             </Card>
         </div>

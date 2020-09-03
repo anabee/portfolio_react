@@ -43,6 +43,10 @@ const ContactSection = () => {
                 <Grid item xs={12}>
                   <ContactCard/>
                 </Grid>
+
+                <Grid item xs={12}>
+                    <img src="/../../bottomBorder.png" alt="leaves" className={classes.image}/>
+                </Grid>
             </Grid>
         </div>
     )
